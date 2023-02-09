@@ -74,17 +74,17 @@
 			turn it around! 
 			*/
 			function update() {
-				positionX = positionX + speed;
-				moveBoxTo(positionX);
-
+				
 				if (positionX > boardWidth) {
 					speed *= -1;
 				}
 				if (positionX < 0) {
 					speed *= -1;
 				}
-     
+				positionX = positionX + speed;
+				moveBoxTo(positionX);
 
+			}
 		
 
 			/* 
